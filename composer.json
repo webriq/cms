@@ -1,7 +1,7 @@
 {
     "name": "webriqcms/cms",
     "type": "project",
-    "description": "WebriQ - the social content management system - skeleton application",
+    "description": "WebriQ - the content management system - skeleton application",
     "license": "BSD-3-Clause",
     "keywords": [
         "webriqcms",
