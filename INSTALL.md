@@ -1,4 +1,4 @@
-Gridguyz - CMS: Install
+WebriQ - CMS: Install
 =======================
 
 1. [System requirements](#system-requirements)
@@ -19,22 +19,22 @@ System requirements
 
 ### Database
 
-Gridguyz runs on [PostgreSQL](http://www.postgresql.org/download/) 9.2+
+WebriQ CMS runs on [PostgreSQL](http://www.postgresql.org/download/) 9.2+
 
 ### Web server
 
-Gridguyz needs a web-server (HTTP server) with a `mod_rewrite`-like extension.
+WebriQ CMS needs a web-server (HTTP server) with a `mod_rewrite`-like extension.
 
 Tested HTTP servers:
 * [Apache](http://httpd.apache.org/download.cgi) 2.2+
 * [Nginx](http://nginx.org/en/download.html)
 * [Lighttpd](http://www.lighttpd.net/download/) / *lighty* 1.4.24+ (soon)
 
-Server docroot should be set under `$gridguyz_path/public`.
+Server docroot should be set under `$webriqcms_path/public`.
 
 ### PHP
 
-Gridguyz runs on PHP 5.4+
+WebriQ CMS runs on PHP 5.4+
 
 Must enable these bundled extensions:
 * `gd2`
@@ -54,25 +54,25 @@ Should enable these extensions:
 ### Composer
 
 [Composer](http://getcomposer.org/download/) is a package manager for PHP.
-All gridguyz modules are in composer packages.
+All webriqcms modules are in composer packages.
 
 Installation
 ------------
 
 ### With composer
 
-You can install Gridguyz with composer <sup>[1](#--no-custom-installers)</sup>
+You can install WebriQ CMS with composer <sup>[1](#--no-custom-installers)</sup>
 
 ```sh
-$ php composer.phar create-project gridguyz/cms
+$ php composer.phar create-project webriqcms/cms
 ```
 
 ### With git clone
 
-1.  Clone the Gridguyz skeleton application
+1.  Clone the WebriQ CMS skeleton application
 
     ```sh
-    $ git clone git://github.com/gridguyz/cms.git
+    $ git clone git://github.com/webriq/cms.git
     ```
 
 2.  Install packages with composer <sup>[1](#--no-custom-installers)</sup>
@@ -83,7 +83,7 @@ $ php composer.phar create-project gridguyz/cms
 
 ### Add modules
 
-You can add modules to your Gridguyz instance by simply runnig
+You can add modules to your WebriQ CMS instance by simply running
 
 ```sh
 $ php composer.phar require
@@ -91,4 +91,4 @@ $ php composer.phar require
 
 <a name="--no-custom-installers"></a><sup id="--no-custom-installers">1</sup>
 You should not use the `--no-custom-installers` flag,
-as Gridguyz use custom composer package-types.
+as WebriQ CMS use custom composer package-types.
